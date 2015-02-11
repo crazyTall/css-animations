@@ -1,0 +1,112 @@
+
+/***
+	styles.css by crazyTall (GitHub)
+	CSS-Animations Repository 
+***/
+
+body {
+	overflow: hidden;
+}
+img {width: 100%;}
+.cloud-one {
+	width: 200px;
+	position: absolute;
+	right: -300px;
+	top: 120px;
+}
+.cloud-two {
+	width: 150px;
+	position: absolute;
+	right: -500px;
+	top: 0;
+}
+.cloud {
+	-webkit-animation: leisurelyCloud 60s linear alternate infinite;
+}
+
+@-webkit-keyframes leisurelyCloud {
+	0% {-webkit-transform: translateX(0%);}
+	100% {-webkit-transform: translateX(-600%);}
+}
+
+.fishing-area {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 160px;
+}
+.fishing-area .fishing-line {
+	height: 40px;
+	width: 1px;
+	background-color: #000;
+	position: absolute;
+	left: 120px;
+	-webkit-animation: linedrop 3s ease-in-out infinite alternate;
+}
+.fishing-area .fishing-lure {
+	width: 25px;
+	position: absolute;
+	left: 73px;
+	top: 22px;
+	-webkit-animation: droplure 3s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes droplure {
+	0% {-webkit-transform: translateY(0px);}
+	100% {-webkit-transform: translateY(300px);}
+}
+@-webkit-keyframes linedrop {
+	0% {height: 40px;}
+	100% {height: 340px;}
+}
+
+footer {
+	height: 115px;
+	width: 100%;
+	overflow: hidden;
+}
+.wave-border {
+	height: 15px;
+	width: 100%;
+	position: fixed;
+	bottom: 100px;
+	background: url('http://www.laurasportfishing.net/wp-content/themes/hookemtheme/images/wave-border.png') repeat-x 0 0;
+}
+.ocean {
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	right:0;
+	background-color: #555;
+}
+.striper {
+	width: 200px;
+	position: absolute;  
+	left: 50%;
+	margin-left: -100px;
+	bottom: 40px;
+}
+.swim {
+	-webkit-animation: swim 3s linear both 2s infinite;
+}
+
+@-webkit-keyframes swim {
+	0% {-webkit-transform: translate(200%, 75%) rotate(0deg)}
+	20%{ -webkit-transform: translate(100%, -55%) rotate(40deg)}
+	40%{ -webkit-transform: translate(0%, -125%) rotate(-20deg)}
+	60%{ -webkit-transform: translate(-100%, -55%) rotate(-30deg)}
+	80% {-webkit-transform: translate(-200%, 75%) rotate(-50deg)}
+	100% {-webkit-transform: translate(-300%, 200%) rotate(-50deg)}
+}
+.wave-border {
+	width: 2000px;
+	margin-left: -360px;
+	-webkit-animation: waves 10s linear alternate infinite;
+}
+@-webkit-keyframes waves {
+	0% {-webkit-transform: translateX(0px)}
+	100% {-webkit-transform: translateX(360px)}
+}
